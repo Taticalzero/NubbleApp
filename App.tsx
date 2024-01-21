@@ -6,12 +6,12 @@
  */
 
 import React from 'react';
-import { SafeAreaView, View} from 'react-native';
-import { Text } from './src/components/Text/Text';
-import { ThemeProvider } from '@shopify/restyle';
-import { theme } from './src/theme/theme';
-import { Box } from './src/components/Box/Box';
-import { Icon } from './src/components/Icon/Icon';
+import {SafeAreaView, View} from 'react-native';
+import {Text} from './src/components/Text/Text';
+import {ThemeProvider} from '@shopify/restyle';
+import {theme} from './src/theme/theme';
+import {Box} from './src/components/Box/Box';
+import {Icon} from './src/components/Icon/Icon';
 
 function App(): React.JSX.Element {
   return (
@@ -23,8 +23,8 @@ function App(): React.JSX.Element {
           </Text>
         </View>
         <Box flexDirection="row">
-             <Icon name="eyeOn" color="error" size={40} />
-             <Icon name="eyeOff" color="carrotSecondary" size={50} />
+          <Icon name="eyeOn" color="error" size={40} />
+          <Icon name="eyeOff" color="carrotSecondary" size={50} />
         </Box>
       </SafeAreaView>
     </ThemeProvider>
