@@ -1,41 +1,38 @@
 import React from 'react';
-
 import {Button} from '../../../components/Button/Button';
-
+import {Icon} from '../../../components/Icon/Icon';
 import {PasswordInput} from '../../../components/PasswordInput/PasswordInput';
 import {Screen} from '../../../components/Screen/Screen';
 import {Text} from '../../../components/Text/Text';
 import {TextInput} from '../../../components/TextInput/TextInput';
 
-export function LoginScreen() {
+export function SignUpScreen() {
+  function submitForm() {
+    // TODO: implementar
+  }
   return (
-    <Screen scrollable>
-      <Text marginBottom="s8" preset="headingLarge">
-        Olá
+    <Screen canGoBack scrollable>
+      <Text preset="headingLarge" mb="s32">
+        Criar uma conta
       </Text>
-      <Text preset="paragraphLarge" mb="s40">
-        Digite seu e-mail e senha para entrar
-      </Text>
-
+      <TextInput label="Seu username" placeholder="@" boxProps={{mb: 's20'}} />
       <TextInput
-        errorMessage="mensagem de error"
+        label="Nome Completo"
+        placeholder="Digite seu nome completo"
+        boxProps={{mb: 's20'}}
+      />
+      <TextInput
         label="E-mail"
         placeholder="Digite seu e-mail"
         boxProps={{mb: 's20'}}
       />
-
       <PasswordInput
         label="Senha"
+        secureTextEntry
         placeholder="Digite sua senha"
-        boxProps={{mb: 's10'}}
+        boxProps={{mb: 's48'}}
       />
-
-      <Text color="primary" preset="paragraphSmall" bold>
-        Esqueci minha senha
-      </Text>
-
-      <Button marginTop="s48" title="Entrar" />
-      <Button preset="outline" marginTop="s12" title="Criar uma conta" />
+      <Button onPress={submitForm} title="Criar uma conta" />
     </Screen>
   );
 }
