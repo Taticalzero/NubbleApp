@@ -1,24 +1,20 @@
 import React from 'react';
 
 import {zodResolver} from '@hookform/resolvers/zod';
-import {NativeStackScreenProps} from '@react-navigation/native-stack';
 import {useForm} from 'react-hook-form';
 
 
 import {Button, FormTextInput, Screen, Text} from '@components';
 import {useResetNavigationSuccess} from '@hooks';
-import {RootStackParamList} from '@routes';
+import { AuthScreenProps } from '@routes';
 
 import {
   ForgotPasswordSchema,
   forgotPasswordSchema,
   defaultValuesForgotPasswordSchema,
 } from './forgotPasswordSchema';
-type ScreenProps = NativeStackScreenProps<
-  RootStackParamList,
-  'ForgotPasswordScreen'
->;
-export function ForgotPasswordScreen({navigation}: ScreenProps) {
+
+export function ForgotPasswordScreen({navigation}: AuthScreenProps<'ForgotPasswordScreen'>) {
   const {reset} = useResetNavigationSuccess();
   const {control, formState, handleSubmit} = useForm<ForgotPasswordSchema>({
     resolver: zodResolver(forgotPasswordSchema),
