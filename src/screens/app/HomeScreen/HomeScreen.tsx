@@ -1,3 +1,4 @@
+/* eslint-disable react-native/no-inline-styles */
 import React from 'react';
 import { FlatList, ListRenderItemInfo, StyleProp, ViewStyle } from 'react-native';
 
@@ -9,8 +10,8 @@ import { AppTabScreenProps } from '@routes';
 import { HomeEmpty } from './components/HomeEmpty';
 import { HomeHeader } from './components/HomeHeader';
 
-export function   HomeScreen({navigation}: AppTabScreenProps<'HomeScreen'>) {
-  const { error, loading, postList, refetch} = usePostList();
+export function HomeScreen({navigation}: AppTabScreenProps<'HomeScreen'>) {
+  const { error, loading, postList, refetch , fetchNextPage} = usePostList();
 
   function renderItem({item}: ListRenderItemInfo<Post>) {
     return <PostItem post={item} />;
@@ -21,6 +22,8 @@ export function   HomeScreen({navigation}: AppTabScreenProps<'HomeScreen'>) {
         data={postList}
         keyExtractor={item => item.id}
         renderItem={renderItem}
+        onEndReached={fetchNextPage}
+        onEndReachedThreshold={0.1}
         ListHeaderComponent={<HomeHeader/>}
         contentContainerStyle={{flex: postList.length === 0 ? 1 : undefined}}
         ListEmptyComponent={
