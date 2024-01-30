@@ -1,7 +1,8 @@
 Este projeto foi desenvolvido usando os recursos CLI do React Native ! 
-Todos os créditos são para @LucasGarcez , professor e instrutor do curso na plataforma @coffstack !
+Todos os créditos são para **[@LucasGarcez](https://github.com/LucasGarcez)**, professor e instrutor do curso na plataforma **[@coffstack](https://cof-fstack.mn.co/)** ! 
 
->**DOC** : 
+
+**DOC** : 
 [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started - Iniciando o Projeto - NubbleApp
@@ -57,6 +58,6 @@ npm run ios
 yarn ios
 ```
 
-## Congratulations! :tada:
+## Parabéns! :tada:
 
 Você executou com êxito seu aplicativo React Native. :partying_face:
