@@ -6,8 +6,8 @@ Todos os créditos são para @LucasGarcez , professor e instrutor do curso na pl
 
 # Getting Started - Iniciando o Projeto - NubbleApp
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
 >**Note**: Tenha certeza que instalou todas as dependencias seguindo a documentação: [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) todas as instruções de como CRIAR uma nova aplicação estão lá , antes de prosseguir.
+
 
 ## Step 1: Update Project - Atualizando o Projeto 
 
@@ -21,11 +21,9 @@ yarn
 
 ## Step 2: Start the Metro Server - Buildando no Metro Server 
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
 Primeiro, você precisará iniciar o **Metro**, o _bundler_ de JavaScript que é fornecido _com_ o React Native.
 
 Para iniciar o Metro, execute o seguinte comando a partir da _root_ do seu projeto React Native:
-To start Metro, run the following command from the _root_ of your React Native project:
 
 ```bash
 # using npm
@@ -37,10 +35,9 @@ yarn start
 
 ## Step 3: Start your Application - Iniciando a Aplicação
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
 Deixe o Metro Bundler ser executado em seu próprio terminal. Abra um _novo_ terminal a partir da _raiz_ do seu projeto React Native. Execute o seguinte comando para iniciar seu aplicativo _Android_ ou _iOS_:
 
-### For Android
+### Para Android
 
 ```bash
 # using npm
@@ -50,7 +47,7 @@ npm run android
 yarn android
 ```
 
-### For iOS
+### Para iOS
 
 ```bash
 # using npm
@@ -62,4 +59,4 @@ yarn ios
 
 ## Congratulations! :tada:
 
-You've successfully run and modified your React Native App. :partying_face:
+Você executou com êxito seu aplicativo React Native. :partying_face:
