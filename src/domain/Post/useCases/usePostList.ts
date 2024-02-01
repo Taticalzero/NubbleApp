@@ -1,5 +1,3 @@
-import {useEffect, useState} from 'react';
-
 import {Post, postService, usePaginatedList} from '@domain';
 
 export function usePostList() {
