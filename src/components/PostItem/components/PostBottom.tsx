@@ -11,7 +11,7 @@ export function PostBottom({author, text, commentCount, id}: Props) {
   const commentText = getCommentText(commentCount);
   const navigation = useNavigation();
   function navigateToCommentPost() {
-    navigation.navigate('PostCommentScreen', {postId: id});
+    navigation.navigate('PostCommentScreen', {postId: id, postAuthorId: author.id});
   }
 
   return (
